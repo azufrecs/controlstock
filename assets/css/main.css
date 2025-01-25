@@ -1,0 +1,273 @@
+/* MIS ESTILOS */
+/* FONDO VERDE OSCURO DEL NAVBAR */
+.fondo_verde_oscuro {
+  background-color: #006937 !important;
+}
+
+/* COLOR ROJO DE FONDO DE LOS MODALES CAMBIAR FECHA, EDITAR FACTURAS, EDITAR VENTAS */
+#ModalAnotherDay, #ModalEditFacturaAcumulada {
+  background-color: rgba(220, 53, 69, 0.65) !important;
+}
+
+/* COLOR AMARILLO DE FONDO DE LOS MODALES */
+#ModalCloseDay,
+#ModalSinIngresos {
+  background-color: rgba(255, 193, 7, 0.65) !important;
+}
+
+/* COLOR VERDE DE FONDO DE LOS MODALES */
+#ModalAddPatologias {
+  background-color: rgba(164,207,187, 0.65) !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+body {
+  background-color: #eeeeee;
+  padding-top: 70px;
+}
+
+.ajustar {
+  white-space: nowrap;
+  width: 1px;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+.quitar_espacios {
+  display: block;
+  margin: 0;
+}
+.toast {
+  left: 50%;
+  position: absolute;
+  bottom: 5px; /* Ajustado para separar el Toast de la parte inferior de la página */
+  transform: translate(-50%, 0px);
+  z-index: 9999;
+}
+
+#inner-message {
+  margin: 0 auto;
+}
+#error-container {
+  margin-top: -12px;
+  position: fixed;
+  width: 100%;
+}
+
+/* BORDES DE LAS TABLAS, COMPLETANDO LOS COLORES DE BOOTSTRAP 4 QUE SOLO TRAE DEFAULT */
+.table-bordered-primary > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #7abaff;
+}
+.table-bordered-success > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #8fd19e;
+}
+.table-bordered-danger > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #ed969e;
+}
+.table-bordered-info > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #86cfda;
+}
+.table-bordered-warning > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #ffdf7e;
+}
+.table-bordered-active > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #dee2e6;
+}
+.table-bordered-secondary > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #b3b7bb;
+}
+.table-bordered-light > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #fbfcfc;
+}
+.table-bordered-dark > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 1px solid #454d55;
+}
+
+/* MIS COLORES DE FONDO REDUCIDOS AL 50% */
+.bg-primary-50 {
+  background-color: #7fbdff !important;
+}
+.bg-success-50 {
+  background-color: #93d3a2 !important;
+}
+.bg-info-50 {
+  background-color: #8bd0db !important;
+}
+.bg-warning-50 {
+  background-color: #fff5d9 !important;
+}
+.bg-danger-50 {
+  background-color: #ed9aa2 !important;
+}
+.bg-secondary-50 {
+  background-color: #b5babe !important;
+}
+.bg-dark-50 {
+  background-color: #999c9f !important;
+}
+
+/* MIS COLORES DE BORDE REDUCIDOS AL 50% */
+.border-primary-50 {
+  border-color: #7fbdff !important;
+}
+.border-success-50 {
+  border-color: #93d3a2 !important;
+}
+.border-info-50 {
+  border-color: #8bd0db !important;
+}
+.border-warning-50 {
+  border-color: #fff5d9 !important;
+}
+.border-danger-50 {
+  border-color: #ed9aa2 !important;
+}
+.border-secondary-50 {
+  border-color: #b5babe !important;
+}
+.border-dark-50 {
+  border-color: #999c9f !important;
+}
+
+/* MIS COLORES DE FONDO REDUCIDOS AL 30% */
+.bg-primary-30 {
+  background-color: #b2d7ff !important;
+}
+.bg-success-30 {
+  background-color: #bee4c7 !important;
+}
+.bg-info-30 {
+  background-color: #dcf1f4 !important;
+}
+.bg-warning-30 {
+  background-color: #ffecb4 !important;
+}
+.bg-danger-30 {
+  background-color: #fae1e3 !important;
+}
+.bg-secondary-30 {
+  background-color: #d3d5d8 !important;
+}
+.bg-dark-30 {
+  background-color: #e0e1e2 !important;
+}
+
+/* MIS COLORES DE FONDO REDUCIDOS AL 10% */
+.bg-primary-10 {
+  background-color: #e5f2ff !important;
+}
+.bg-success-10 {
+  background-color: #e9f6ec !important;
+}
+.bg-info-10 {
+  background-color: #e7f6f8 !important;
+}
+.bg-warning-10 {
+  background-color: #fff9e6 !important;
+}
+.bg-danger-10 {
+  background-color: #fbeaec !important;
+}
+.bg-secondary-10 {
+  background-color: #f0f1f2 !important;
+}
+.bg-dark-10 {
+  background-color: #eaebec !important;
+}
+
+/* DIVIDIR TEXTO CON ... CUANDO SE PASE DEL ANCHO */
+#responsive_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* FORMATO DEL ENCABEZADO DE LAS TABLAS */
+thead tr th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #007b45;
+}
+
+/* DEFINIENDO ALTO DEL BODY DE LA TABLA PARA QUE QUEDE EL ENCABEZADO FIJO */
+.table-responsive1 {
+  height: 520px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #007b45;
+}
+
+/* AGREGANDO ESTILO DE BOTO XS */ 
+.btn-group-xs > .btn, .btn-xs {
+  padding: .25rem .4rem;
+  font-size: .875rem;
+  line-height: .5;
+  border-radius: .2rem;
+}
+
+.seleccionado {
+			background-color: #007bff;
+			color: white;
+}

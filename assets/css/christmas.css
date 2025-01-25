@@ -1,0 +1,211 @@
+/* snowflakes*/
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(80px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(80px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 10;
+    color: #80C7EB;
+    /* text-shadow: 0 0 1px #000; */
+    font-size: 1em;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+    left: 80%;
+    animation-delay: 3s, 1.5s;
+}
+
+.flipdown {
+    margin: 0 auto;
+}
+
+/* Flying santa*/
+.santa-container {
+    height: 480px;
+    width: 350px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: plane-movement;
+    z-index: 9999;
+}
+
+@keyframes plane-movement {
+    0% {
+        opacity: 1;
+        left: 100vw;
+        top: 60%;
+    }
+    50% {
+        opacity: 1;
+        left: 50vw;
+        top: 70%;
+    }
+    100% {
+        opacity: 1;
+        left: -100vw;
+        top: 60%;
+    }
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.plane {
+    position: relative;
+    -webkit-animation: float 3s infinite;
+    animation: float 3s infinite;
+}
+@-webkit-keyframes float {
+    50% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+    }
+}
+@keyframes float {
+    50% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+    }
+}
+.hand {
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -webkit-animation: wave 1.5s infinite;
+    animation: wave 1.5s infinite;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+.blade {
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+    -webkit-transform-origin: 50% 54%;
+    -ms-transform-origin: 50% 54%;
+    transform-origin: 50% 54%;
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+@-webkit-keyframes wave {
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+@keyframes wave {
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+@media screen and (min-width: 451px) {
+    a {
+        font-size: 20px;
+        padding: 8px 12px 8px 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    a {
+        font-size: 14px;
+        padding: 5px 8px 5px 8px;
+    }
+}
